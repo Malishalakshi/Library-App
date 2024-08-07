@@ -27,7 +27,6 @@ import service.ServiceFactory;
 import service.custom.BookService;
 import service.custom.BorrowingService;
 import service.custom.MemberService;
-import tm.BookTM;
 import tm.BorrowingTM;
 
 
@@ -132,7 +131,7 @@ public class BorrowingController implements Initializable {
     @FXML
     private TextField txtReturnedDate;
 
-    private BorrowingService borrowingService = (BorrowingService)ServiceFactory.getInstance().getService(ServiceFactory.ServiceType.BORROWING);
+    private BorrowingService borrowingService = (BorrowingService)ServiceFactory.getInstance().getService(ServiceFactory.ServiceType.BORROWINGS);
     private BookService bookService = (BookService)ServiceFactory.getInstance().getService(ServiceFactory.ServiceType.BOOK);
     private MemberService memberService = (MemberService)ServiceFactory.getInstance().getService(ServiceFactory.ServiceType.MEMBER);
    
