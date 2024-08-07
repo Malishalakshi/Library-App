@@ -1,75 +1,93 @@
 package entity;
 
+import java.time.LocalDate;
+
 public class BorrowingEntity {
-    private String borrowID;
-    private String memberID;
-    private String bookID;
-    private String borrowDate;
-    private String dueDate;
-    private String rtnDate;
+    private String borrowingId;
+    private String bookId;
+    private String memberId;
+    private LocalDate borrowDate;
+    private LocalDate dueDate;
+    private LocalDate returnedDate;
     private Double fine;
+
     public BorrowingEntity() {
     }
-    public BorrowingEntity(String borrowID, String memberID, String bookID, String borrowDate, String dueDate,
-            String rtnDate, Double fine) {
-        this.borrowID = borrowID;
-        this.memberID = memberID;
-        this.bookID = bookID;
+
+    public BorrowingEntity(String borrowingId, String bookId, String memberId, LocalDate borrowDate, LocalDate dueDate,
+            LocalDate returnedDate, Double fine) {
+        this.borrowingId = borrowingId;
+        this.bookId = bookId;
+        this.memberId = memberId;
         this.borrowDate = borrowDate;
         this.dueDate = dueDate;
-        this.rtnDate = rtnDate;
+        this.returnedDate = returnedDate;
         this.fine = fine;
     }
-    public String getBorrowID() {
-        return borrowID;
+
+    public String getBorrowingId() {
+        return borrowingId;
     }
-    public void setBorrowID(String borrowID) {
-        this.borrowID = borrowID;
+
+    public void setBorrowingId(String borrowingId) {
+        this.borrowingId = borrowingId;
     }
-    public String getMemberID() {
-        return memberID;
+
+    public String getBookId() {
+        return bookId;
     }
-    public void setMemberID(String memberID) {
-        this.memberID = memberID;
+
+    public void setBookId(String bookId) {
+        this.bookId = bookId;
     }
-    public String getBookID() {
-        return bookID;
+
+    public String getMemberId() {
+        return memberId;
     }
-    public void setBookID(String bookID) {
-        this.bookID = bookID;
+
+    public void setMemberId(String memberId) {
+        this.memberId = memberId;
     }
-    public String getBorrowDate() {
+
+    public LocalDate getBorrowDate() {
         return borrowDate;
     }
-    public void setBorrowDate(String borrowDate) {
+
+    public void setBorrowDate(LocalDate borrowDate) {
         this.borrowDate = borrowDate;
     }
-    public String getDueDate() {
+
+    public LocalDate getDueDate() {
         return dueDate;
     }
-    public void setDueDate(String dueDate) {
+
+    public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
-    public String getRtnDate() {
-        return rtnDate;
+
+    public LocalDate getReturnedDate() {
+        return returnedDate;
     }
-    public void setRtnDate(String rtnDate) {
-        this.rtnDate = rtnDate;
+
+    public void setReturnedDate(LocalDate returnedDate) {
+        this.returnedDate = returnedDate;
     }
+
     public Double getFine() {
         return fine;
     }
+
     public void setFine(Double fine) {
         this.fine = fine;
     }
+
     @Override
     public String toString() {
-        return "BorrowingEntity [borrowID=" + borrowID + ", memberID=" + memberID + ", bookID=" + bookID
-                + ", borrowDate=" + borrowDate + ", dueDate=" + dueDate + ", rtnDate=" + rtnDate + ", fine=" + fine
-                + "]";
+        return "BorrowingEntity [borrowingId=" + borrowingId + ", bookId=" + bookId + ", memberId=" + memberId
+                + ", borrowDate=" + borrowDate + ", dueDate=" + dueDate + ", returnedDate=" + returnedDate + ", fine="
+                + fine + "]";
     }
-
-
     
-
+     
+    
 }

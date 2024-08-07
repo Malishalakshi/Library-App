@@ -103,12 +103,12 @@
             <Font name="Arial Bold" size="11.0" />
          </font>
       </JFXButton>
-      <Label fx:id="lblBorrowingID1" layoutX="399.0" layoutY="143.0" prefHeight="46.0" prefWidth="159.0" text="Member Details" textAlignment="CENTER" textFill="#3c1b8f">
+      <Label fx:id="lblBorrowingID1" layoutX="399.0" layoutY="143.0" prefHeight="46.0" prefWidth="159.0" textAlignment="CENTER" textFill="#3c1b8f">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>
       </Label>
-      <Label fx:id="lblBorrowingID11" layoutX="399.0" layoutY="177.0" prefHeight="46.0" prefWidth="159.0" text="Book Details" textAlignment="CENTER" textFill="#3c1b8f">
+      <Label fx:id="lblBorrowingID11" layoutX="399.0" layoutY="177.0" prefHeight="46.0" prefWidth="159.0" textAlignment="CENTER" textFill="#3c1b8f">
          <font>
             <Font name="System Bold" size="11.0" />
          </font>
